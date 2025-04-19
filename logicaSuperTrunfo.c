@@ -157,11 +157,17 @@ int main()
         printf("%s: %.2f bilhões\n", cidade1, pib1);
         printf("%s: %.2f bilhões\n", cidade2, pib2);
         if (pib1 > pib2)
+        {
             printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
+        }
         else if (pib2 > pib1)
+        {
             printf("Resultado: Carta 2 (%s) venceu!\n", cidade2);
+        }
         else
+        {
             printf("Resultado: Empate!\n");
+        }
         break;
 
     case 4:
@@ -170,7 +176,57 @@ int main()
         printf("%s: %d\n", cidade2, pontos_turisticos2);
         if (pontos_turisticos1 > pontos_turisticos2)
         {
+            printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
         }
+        else if (pontos_turisticos2 > pontos_turisticos1)
+        {
+            printf("Resultado: Carta 2 (%s) venceu!\n", cidade2);
+        }
+        else
+        {
+            printf("Resultado: Empate!\n");
+        }
+        break;
+
+    case 5:
+        printf("Comparando Densidade Demográfica (menor vence):\n");
+        printf("%s: %d\n", cidade1, densidade_populacional1);
+        printf("%s: %d\n", cidade2, densidade_populacional2);
+        if (densidade_populacional1 > densidade_populacional2)
+        {
+            printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
+        }
+        else if (densidade_populacional2 > densidade_populacional1)
+        {
+            printf("Resultado: Carta 2 (%s) venceu!\n", cidade2);
+        }
+        else
+        {
+            printf("Resultado: Empate!\n");
+        }
+        break;
+
+    case 6:
+        printf("Comparando o Super Poder:\n");
+        printf("%s: %.2f\n", cidade1, super_poder1);
+        printf("%s: %.2f\n", cidade2, super_poder2);
+        if (super_poder1 > super_poder2)
+        {
+            printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
+        }
+        else if (super_poder2 > super_poder1)
+        {
+            printf("Resultado: Carta 2 (%s) venceu!\n", cidade2);
+        }
+        else
+        {
+            printf("Resultado: Empate!\n");
+        }
+        break;
+
+    default:
+        printf("Opção Inválida, Tente Novamente!\n");
+        break;
     }
 
     return 0;
